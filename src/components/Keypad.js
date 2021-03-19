@@ -3,14 +3,13 @@ import React from 'react';
 
 class Keypad extends React.Component {
     
-    
+ 
+
+
     render() {
       return (
           <div>
-              <input>
-                type="password"
-                onKeyUp={this.handleInputPassword}
-              </input>
+              <input type="password" onKeyUp={console.log('Entering password...')}/>
           </div>
       )  
     }
@@ -18,5 +17,8 @@ class Keypad extends React.Component {
 
 export default Keypad;
 
-//we write a div with a input tag with a password type
-//we add a onKeyUp event listener
+//we create a KeyPad component
+//we render a input with the type of password
+//we also add a event listner that listens for KeyUp event
+//when it is triggered it console logs a message "entering password"
+

@@ -1,21 +1,19 @@
 import React from 'react';
 
 class EyesOnMe extends React.Component {
-    
-    onFocus = () => console.log('Good!')
 
-    onBlur = () => console.log('Hey! Eyes on me!')
 
     render() {
         return (
-            <button onFocus={this.onFocus} onBlur={this.onBlur}> 
-                Eyes on me, please!
-            </button>
+            <button onFocus={console.log('Good!')} onBlu={console.log('Hey! Eyes on me!')}/> 
         )
-
-    }
+     }
 }
 
 export default EyesOnMe;
 
-//we add a button that listens to an event of focus and blur
+//we first create a eyesOnme class component
+//in the render we add in a button 
+//we add two event listeners, onFocus & onBlue
+//when the focus one gets triggered we console log '"Good"
+//whe the blue event fires we console.log Hey! Eyes on me!
